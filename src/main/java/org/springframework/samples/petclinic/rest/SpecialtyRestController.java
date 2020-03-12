@@ -60,7 +60,9 @@ public class SpecialtyRestController {
 		if (specialties.isEmpty()){
 			return new ResponseEntity<Collection<Specialty>>(HttpStatus.NOT_FOUND);
 		}
-		return new ResponseEntity<Collection<Specialty>>(specialties, HttpStatus.OK);
+		// defect 4 added here 
+		return new ResponseEntity<Collection<Specialty>>(HttpStatus.NOT_FOUND);
+//		return new ResponseEntity<Collection<Specialty>>(specialties, HttpStatus.OK);
 	}
 
     @PreAuthorize( "hasRole(@roles.VET_ADMIN)" )

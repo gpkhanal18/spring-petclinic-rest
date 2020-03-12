@@ -134,7 +134,8 @@ public class OwnerRestController {
 		if (owner == null) {
 			return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
 		}
-		this.clinicService.deleteOwner(owner);
+		// defect no 1 is here user sees that they are able to delete owner but in reallity they are not  uncomment below line
+//		this.clinicService.deleteOwner(owner);
 		return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
 	}
 

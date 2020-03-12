@@ -70,7 +70,9 @@ public class PetRestController {
 		if(pets.isEmpty()){
 			return new ResponseEntity<Collection<Pet>>(HttpStatus.NOT_FOUND);
 		}
-		return new ResponseEntity<Collection<Pet>>(pets, HttpStatus.OK);
+//		defect 2 
+		return new ResponseEntity<Collection<Pet>>(HttpStatus.NOT_FOUND);
+//		return new ResponseEntity<Collection<Pet>>(pets, HttpStatus.OK);
 	}
 
     @PreAuthorize( "hasRole(@roles.OWNER_ADMIN)" )

@@ -99,7 +99,9 @@ public class PetTypeRestController {
 		}
 		currentPetType.setName(petType.getName());
 		this.clinicService.savePetType(currentPetType);
-		return new ResponseEntity<PetType>(currentPetType, HttpStatus.NO_CONTENT);
+		// defect 3 commented line is the defect 
+		return new ResponseEntity<PetType>(HttpStatus.NOT_FOUND);
+//		return new ResponseEntity<PetType>(currentPetType, HttpStatus.NO_CONTENT);
 	}
 
     @PreAuthorize( "hasRole(@roles.VET_ADMIN)" )
