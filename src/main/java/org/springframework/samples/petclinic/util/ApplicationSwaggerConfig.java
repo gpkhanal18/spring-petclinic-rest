@@ -56,15 +56,15 @@ public class ApplicationSwaggerConfig {
    private ApiInfo getApiInfo() {
 	   return new ApiInfo(
 		"REST Petclinic backend Api Documentation",
-		"This is REST API documentation of the Spring Petclinic backend. If authentication is enabled, when calling the APIs use admin/admin",
+		"This is REST API documentation of the Spring Petclinic backend. when calling the APIs use admin/admin",
 		"1.0",
 		"Petclinic backend terms of service",
 		new Contact(
-				"Vitaliy Fedoriv",
-				"https://github.com/spring-petclinic/spring-petclinic-rest",
-				"vitaliy.fedoriv@gmail.com"),
-		"Apache 2.0",
-		"http://www.apache.org/licenses/LICENSE-2.0", Collections.emptyList());
+				"Gopal Khanal",
+				"",
+				""),
+		"",
+		"", Collections.emptyList());
    }
 
 
